@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { getSummary } from "../api/transactions";
-import { PieChart } from "../components/PieChart";
-import { money } from "../format";
-import type { Summary } from "../types";
+import { getSummary } from "../api/transactions.ts";
+import { PieChart } from "../components/PieChart.tsx";
+import { money } from "../format.ts";
+import type { Summary } from "../types.ts";
 
 // Local-time "YYYY-MM" (toISOString would use UTC and can be off near month ends)
 function currentMonth(): string {
